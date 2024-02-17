@@ -221,26 +221,28 @@
                             <form>
                                 <div class="mb-3">
                                     <label for="nombre" class="form-label text-white text-start">Nombre</label>
-                                    <input type="text" class="form-control" id="nombre">
+                                    <input type="text" class="form-control" id="nombre" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                    data-bs-title="Tooltip on bottom" title="Ingresa tu nombre">
 
                                 </div>
                                 <div class="mb-3">
                                     <label for="asunto" class="form-label text-white text-start">Asunto</label>
-                                    <input type="text" class="form-control" id="asunto">
+                                    <input type="text" class="form-control" id="asunto" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                    data-bs-title="Tooltip on bottom" title="Ingresa el asunto">
                                 </div>
 
                                 <div class="mb-3">
                                     <label for="mensaje" class="form-label text-white text-start">Mensaje</label>
-                                    <textarea class="form-control" id="mensaje" rows="4"></textarea>
+                                    <textarea class="form-control" id="mensaje" rows="4" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                                    data-bs-title="Tooltip on bottom" title="Escribe tu mensaje"></textarea>
                                 </div>
 
                                 <div class="row justify-content-start">
                                     <div class="col-4 col-sm-3 col-md-2 col-lg-1">
                                         <div class="d-grid">
-                                            <button id="enviar_formulario" type="submit" class="btn style text-white px-0"
-                                                 data-bs-toggle="tooltip"
-                                                data-placement="bottom" title="Presiona para enviar formulario" href="">Enviar</button>
-                                            
+                                            <button type="button" class="btn style text-white px-0" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="left" data-bs-content="Left popover"
+                                                title="Presiona acá para enviar formulario">Enviar</button>
+
                                         </div>
                                     </div>
 
